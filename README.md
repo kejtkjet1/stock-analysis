@@ -10,16 +10,12 @@ We looked at excel stock market outputs to create a program that can summarize t
 
 We started the stock analysis with an original code developed while following the class module. The run time for year 2017 and 2018 was as follows
 
-2017 Original
 ![2017_originalcode.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/2017_originalcode.png)
-2018 Original
 ![2018_originalcode.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/2018_originalcode.png)
 
 The performnance significanly improved after the code was refactored
 
-2017 Refactored
 ![VBA_Challenge_2017.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/VBA_Challenge_2017.png)
-2018 Refactored
 ![VBA_Challenge_2018.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/VBA_Challenge_2018.png)
 
 One of the main challenges encountered with this data set was UNIX Timestamp used to signify the deadline and the launch date. We were able to overcome this challenge by converting the UNIX Timestamp to a usable date format by applying a formula that converted seconds since January 1, 1970 to an actual date. This allowed us to understand the timeframes for each fundraiser. 
