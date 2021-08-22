@@ -18,7 +18,44 @@ The performnance significanly improved after the code was refactored
 ![VBA_Challenge_2017.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/VBA_Challenge_2017.png)
 ![VBA_Challenge_2018.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/VBA_Challenge_2018.png)
 
-One of the main challenges encountered with this data set was UNIX Timestamp used to signify the deadline and the launch date. We were able to overcome this challenge by converting the UNIX Timestamp to a usable date format by applying a formula that converted seconds since January 1, 1970 to an actual date. This allowed us to understand the timeframes for each fundraiser. 
+As the above clearly shows, the refactored code was more than 6 times faster why generating the same exact outcome. The main benefit was removal of an additional loop by including an index for one of the arrays (which summarized the stock tickers)
+
+the simple step of creating an index:
+
+    '1a) Create a ticker Index
+    tickerindex = 0
+
+Allowed us to refer back to the index at later stages, for example:
+
+To increase the volume of the current tickerVolumes by using the tickerIndex variable as the index, use the following code:
+tickerVolumes(tickerindex) = tickerVolumes(tickerindex) + Cells(i, 8).Value
+
+        
+        '3b) Check if the current row is the first row with the selected tickerIndex.
+
+   
+ If Cells(i - 1, 1).Value <> tickers(tickerindex) And Cells(i, 1).Value = tickers(tickerindex) Then
+
+               tickerStartingPrices(tickerindex) = Cells(i, 6).Value
+            
+        End If
+        
+        '3c) check if the current row is the last row with the selected ticker
+         'If the next row?s ticker doesn?t match, increase the tickerIndex.
+        'If  Then
+            
+             If Cells(i + 1, 1).Value <> tickers(tickerindex) And Cells(i, 1).Value = tickers(tickerindex) Then
+
+               tickerEndingPrices(tickerindex) = Cells(i, 6).Value
+               
+        '3d Increase the tickerIndex
+        tickerindex = tickerindex + 1
+               
+               End If
+
+Adding the index- allowed us to simplify and minimize the code and make it more flexible
+
+
 
 ## Summary
 
