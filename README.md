@@ -53,7 +53,7 @@ tickerVolumes(tickerindex) = tickerVolumes(tickerindex) + Cells(i, 8).Value
                
                End If
 
-Adding the index- allowed us to simplify and minimize the code and make it more flexible
+Adding the index- allowed us to simplify and minimize the code and make it faster and more flexible
 
 
 
@@ -61,18 +61,12 @@ Adding the index- allowed us to simplify and minimize the code and make it more 
 
 - Advantages or disadvantages of refactoring code
 
-  - One important piece of infomration is the fundraising campaign lenghth. It would help to evaluate if longer or shorter fundraising campaigns generated more successful outcomes  
-  - We should re-create the visualizations above for outcomes that look at the target market only. While its helpul to evaluate Kickstarter campaigs for all the markets, we will not get a clear picture unless we only look at the country we are intersted in. Each market may be affected by regional nuances
-  - We should also recreate the vizualizations above looking at more recent years only. While looking at a larger data set allows us to see seasonality, the marketplace surely has changed significantly since 2009. A look at more recent years may provide more relevant information to base our decision on
-  - We shold also create a visualization that looks at percentage success based on average donation by backer. It will help us evaluate if more successful plays depended heavily on couple of large donations, or if the success depended on numberous smaller donors showing a mass appeaf of the play. 
+  - Main benefit of refactoring an existing code is having an baseline to work from so we don't need to write the code from 0
+  - However a possible disadvantage from seeing a solution that works already can come from inability of finding a new way of solving a problem that may be more efficient
 
 
 
 - Pros and cons to refactoring the original VBA script?
 
-  - One important piece of infomration is the fundraising campaign lenghth. It would help to evaluate if longer or shorter fundraising campaigns generated more successful outcomes  
-  - We should re-create the visualizations above for outcomes that look at the target market only. While its helpul to evaluate Kickstarter campaigs for all the markets, we will not get a clear picture unless we only look at the country we are intersted in. Each market may be affected by regional nuances
-  - We should also recreate the vizualizations above looking at more recent years only. While looking at a larger data set allows us to see seasonality, the marketplace surely has changed significantly since 2009. A look at more recent years may provide more relevant information to base our decision on
-  - We shold also create a visualization that looks at percentage success based on average donation by backer. It will help us evaluate if more successful plays depended heavily on couple of large donations, or if the success depended on numberous smaller donors showing a mass appeaf of the play. 
-
-
+  - Refractored code was a lot faster- we were able to eliminate some of the loops to allow much faster processing
+  - The original code on the other hand was easier to set up and comprehend - and the logic was a bit easier to follow initially
