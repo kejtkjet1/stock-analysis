@@ -18,9 +18,9 @@ The performnance significanly improved after the code was refactored
 ![VBA_Challenge_2017.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/VBA_Challenge_2017.png)
 ![VBA_Challenge_2018.png](https://github.com/kejtkjet1/stock-analysis/blob/main/resources/VBA_Challenge_2018.png)
 
-As the above clearly shows, the refactored code was more than 6 times faster why generating the same exact outcome. The main benefit was removal of an additional loop by including an index for one of the arrays (which summarized the stock tickers)
+As the above clearly shows, the refactored code was more than 6 times faster while generating the same exact outcome. The main benefit was removal of an additional loop by including an index for one of the arrays (which summarized the stock tickers)
 
-the simple step of creating an index:
+A simple step of creating an index:
 
     '1a) Create a ticker Index
     tickerindex = 0
@@ -55,7 +55,7 @@ tickerVolumes(tickerindex) = tickerVolumes(tickerindex) + Cells(i, 8).Value
 
 Adding the index- allowed us to simplify and minimize the code and make it faster and more flexible
 
-
+The excel file the incudes the entire analysis as well as VBA code can be located: https://github.com/kejtkjet1/stock-analysis/blob/main/VBA_Challenge.xlsm
 
 ## Summary
 
