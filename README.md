@@ -4,7 +4,7 @@
 
 ### Purpose
 
-We looked at excel stock market outputs to create a program that can summarize the stock performance regardless of the year we want to analize. We initially worked with a VBA code that performed the same function, but took a lot longer to run the code. The goal of this VBA script was to provide smilar analysis of the data but to do so for multiple years and process the data faster. 
+We looked at excel stock market outputs to create a program that can summarize the stock performance regardless of the year we want to analyze. We initially worked with a VBA code that performed the same function, but took a lot longer to run the code. The goal of this VBA script was to provide smilar analysis of the data but to do so for multiple years and process the data faster. 
 ## Results
 
 
